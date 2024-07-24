@@ -3,19 +3,23 @@ import mongoose from "mongoose";
 const charSchema = new mongoose.Schema({
     Player_Name: {
         type: String,
-        required: true,
+        required: true
     },
     Character_Name: {
         type: String,
-        required: true,
+        required: true
     },
     Class: {
         type: String,
-        required: true,
+        required: true
     },
     Race: {
         type: String,
-        required: true,
+        required: true
+    },
+    Level: {
+        type: Number,
+        required: true
     },
     Health_Points: {
         type: Number,
@@ -23,10 +27,10 @@ const charSchema = new mongoose.Schema({
     },
     Alive: {
         type: Boolean,
-        required: true,
+        required: true
     },
     Initiative: {
-        type: Number,
+        type: Number
     }
 })
 
