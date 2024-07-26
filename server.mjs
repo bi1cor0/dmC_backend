@@ -10,7 +10,7 @@ import cors from 'cors'
 //Configurations
 dotenv.config();
 const app = express(); //calling express functionality 
-const PORT = process.env.PORT //defining PORT number
+const PORT = process.env.PORT || 4000 //defining PORT number
 
 connectDB() //calling connectDB function 
 
