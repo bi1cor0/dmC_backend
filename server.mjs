@@ -3,6 +3,7 @@ import express from 'express';
 import dotenv from 'dotenv'
 import Characters from './routes/Character_routes.mjs';
 import connectDB from './config/db.mjs';
+import cors from 'cors'
 //import character from './models/Characters.mjs';
 //import charas from './utilities/character_data.mjs';
 
@@ -15,6 +16,7 @@ connectDB() //calling connectDB function
 
 //Middleware
 app.use(express.json())
+app.use(cors())
 
 //Routes
 app.use('/characters', Characters)
