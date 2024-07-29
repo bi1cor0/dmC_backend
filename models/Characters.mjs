@@ -27,7 +27,6 @@ const charSchema = new mongoose.Schema({
     },
     Alive: {
         type: Boolean,
-        required: true
     },
     Initiative: {
         type: Number
