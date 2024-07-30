@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-
+//New character schema for adding new characters. 
 const charSchema = new mongoose.Schema({
     Player_Name: {
         type: String,

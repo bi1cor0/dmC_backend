@@ -21,7 +21,7 @@ router.post('/', async (req, res) =>{
         let newChar = new Characters(req.body)
         //Save the new Characters entry
         await newChar.save()
-        //Display what the new dog entry is
+        //Display what the new character entry is
         res.json(newChar)
     } catch(err){
         console.error(err)
@@ -29,7 +29,7 @@ router.post('/', async (req, res) =>{
     }
 })
 
-router.patch('/:id', async (req, res) =>{
+router.patch('/:id', async (req, res) =>{ //patch route for updating character objects. 
     try{
         const updateChar = await Characters.findByIdAndUpdate(req.params.id, req.body, {new: true})
         res.json(updateChar)
@@ -39,7 +39,7 @@ router.patch('/:id', async (req, res) =>{
     }
 })
 
-router.delete('/:id', async (req, res) =>{
+router.delete('/:id', async (req, res) =>{ //delete route for deleting character objects. 
     try{
         await Characters.findByIdAndDelete(req.params.id, req.body, {new: true})
         res.status(200).json({msg: 'Item Deleted'})
