@@ -1,6 +1,12 @@
 # Dungeon/Game Master Companion App Back End
 Front end: https://github.com/bi1cor0/dmC_frontend.git
 
+## Tools
+- Node
+- Express
+- Mongoose
+- Javascript
+
 ## About
 The goal for this application is mainly for use game masters or more specifically, Dungeon Masters for the Dungeons and Dragons tabletop roleplaying game. There is a lot of data that dungeon masters have to manage, and characters are only one type of many types of data. This app is meant to be a data organizer and manager that takes data necessary for dungeon masters and puts it in a card format for easy selection and manipulation.
 
